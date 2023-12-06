@@ -1,0 +1,114 @@
+.header {
+  &__inner {
+    padding: 100px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 216px;
+      img {
+        width: 100%;
+      }
+    }
+    &-buttons {
+      display: flex;
+      align-items: center;
+    }
+    .button {
+      margin-right: 40px;
+      &:last-child {
+        margin: 0;
+      }
+      b {
+        font-weight: inherit;
+      }
+    }
+  }
+}
+// 1380px
+@mixin header-xxxlg-xxxxlg {
+  .header {
+    &__inner {
+      padding: 60px 0;
+      &-logo {
+        width: 200px;
+      }
+      .button {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+    .header {
+      &__inner {
+        padding: 40px 0;
+        &-logo {
+          width: 160px;
+        }
+        .button {
+          margin-right: 12px;
+        }
+      }
+    }
+}
+// 650px
+@mixin header-sm-md-extra {
+  .header {
+    &__inner {
+      padding: 25px 0 20px;
+      &-logo {
+        width: 120px;
+      }
+      .button {
+        margin-right: 8px;
+        &.secondary {
+          border-radius: 50%;
+          padding:8px;
+          max-height: unset;
+          b {
+            display: none;
+          }
+          span {
+            width: 15px;
+            height: 15px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+  .header {
+    &__inner {
+      &-logo {
+        width: 100px;
+      }
+      .button {
+        &.secondary {
+          padding:6px;
+          span {
+            width: 13px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes sticky {
+    0% {
+      top: -60px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }

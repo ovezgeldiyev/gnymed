@@ -1,0 +1,214 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+    // @include intro-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    h1 {
+        font-size: 75px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        &.big {
+            font-size: 28px;
+        }
+    }
+    @include header-xxxlg-xxxxlg;
+    @include intro-xxxlg-xxxxlg;
+    @include footer-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+    h1 {
+        font-size: 70px;
+    }
+    // @include intro-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        &.big {
+            font-size: 24px;
+        }
+    }
+    @include intro-xlg-xxlg;
+    @include about-xlg-xxlg;
+    @include info-xlg-xxlg;
+    @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+        &.big {
+            font-size: 20px;
+        }
+    }
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+        max-height: 38px;
+        span {
+            width: 15px;
+            height: 15px;
+            margin-right: 7px;
+            &.sm {
+                width: 11px;
+            }
+        }
+    }
+    @include header-lg-xlg;
+    @include about-lg-xlg;
+}
+// 930px
+@include md-lg {
+    h1 {
+        font-size: 55px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    @include about-md-lg;
+    @include info-md-lg;
+    @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    @include intro-sm-md;
+    @include about-sm-md;
+    @include info-sm-md;
+}
+// 650px
+@include sm-md-extra {
+    h1 {
+        font-size: 40px;
+    }
+    @include header-sm-md-extra;
+}
+// 540px
+@include xsm-sm  {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    p {
+        font-size: 14px;
+        &.big {
+            font-size: 16px;
+        }
+    }
+    .button {
+        font-size: 12px;
+        padding: 8px 16px;
+        max-height: 30px;
+        span {
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            &.sm {
+                width: 9px;
+            }
+        }
+    }
+    .modall {
+        padding: 25px;
+        &__inner {
+            padding: 60px 35px 40px;
+            min-height: unset;
+            border-radius: 30px;
+            &-close {
+                top: 15px;
+                right: 20px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    @include header-xsm-sm;
+    @include intro-xsm-sm;
+    @include about-xsm-sm;
+    @include info-xsm-sm;
+    @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm  {
+    h1 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    // @include intro-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm  {
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 12px;
+        &.big {
+            font-size: 14px;
+        }
+    }
+    @include footer-xxxsm-xxsm;
+}
+

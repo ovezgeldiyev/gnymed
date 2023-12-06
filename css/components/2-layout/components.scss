@@ -1,0 +1,188 @@
+h1 {
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 115%;
+  font-family: $ptSerif;
+  color: $black;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 115%;
+  font-family: $ptSerif;
+  color: $black;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 138%;
+  font-family: $ptSerif;
+  color: $black;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 110%;
+  color: $black;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: $black;
+}
+p {
+  line-height: 180%;
+  &.big {
+    font-size: 32px;
+    line-height: 150%;
+  }
+}
+.main {
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 500;
+  font-family: $mainFont;
+  border-radius: 70px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  max-height: 47px;
+  padding: 14px 28px;
+  &:hover {
+    opacity: 1;
+  }
+  &.secondary {
+    color: $black;
+    border: 1px solid $black;
+    &:hover {
+      opacity: 1;
+      background-color: $black;
+      color: $white;
+      span {
+        svg {
+          color: $white;
+        }
+      }
+    }
+  }
+  &.primary {
+    background-color: $primary;
+    color: $main;
+    &:hover {
+      opacity: 1;
+      color: $white;
+      background-color: $main;
+    }
+  }
+  &.uniq {
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    &:hover {
+      opacity: 1;
+      color: $main;
+      background-color: $white;
+    }
+  }
+  span {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    &.sm {
+      width: 13px;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      color: $black;
+      transition: 0.3s ease;
+    }
+  }
+}
+.modall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  padding: 40px;
+  display: none;
+  z-index: 9999;
+  &.active {
+    display: flex;
+    animation: fadeIn 0.4s;
+  }
+  &__inner {
+    background-color: $white;
+    border-radius: 40px;
+    padding: 90px 60px 50px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+    position: relative;
+    &-close {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #efefef;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      &::before {
+        width: 50%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: #333;
+      }
+      &::after {
+        width: 50%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: #333;
+      }
+    }
+    p {
+      font-weight: 500;
+      b {
+        font-weight: 500;
+        color: $black;
+      }
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
